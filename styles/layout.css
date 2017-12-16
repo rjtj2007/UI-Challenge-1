@@ -1,17 +1,20 @@
 .container {
     display: flex;
+    justify-content: flex-start;
     flex-direction: row;
     flex-wrap: wrap;
+    flex-flow: column wrap;
+    align-content: stretch;
 }
 
 #a {
-    background-color: lightcoral;
+    background-color: lightgray;
     width: 480px;
     height: 75px;
 }
 
 #b {
-    background-color: lightblue;
+    background-color: lightcoral;
     width: 480px;
     height: 150px;
 }
@@ -29,7 +32,18 @@
 }
 
 #i {
-    background-color: lightcoral;
+    background-color: lightcyan;
     width: 480px;
     height: 80px;
+}
+
+/* MOBILE */
+@media screen and (max-width: 768px) {
+    body {
+        width: 100%;
+    }
+
+/* DESKTOP*/
+@media screen and (min-width: 768px) {
+    
 }
